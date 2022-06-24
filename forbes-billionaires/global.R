@@ -26,6 +26,7 @@ prop.table(table(data$countryOfCitizenship))
 
 q.worth <- quantile(data$finalWorth, probs = c(.95))
 data <- transform(data, worthGroup = ifelse(finalWorth>q.worth, 'Top 5%', 'Bottom 95%'))
+share.worth<-sum(data$finalWorth[data$finalWorth > q.worth])/sum(data$finalWorth)
 data$worthGroup <- as.factor(data$worthGroup)
 n.bins <- 30 # number of bins
 additional.cutoffs <- q.worth
