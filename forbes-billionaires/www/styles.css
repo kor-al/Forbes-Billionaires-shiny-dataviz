@@ -1,0 +1,161 @@
+/* Get a fancy font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  
+}
+
+html{
+  font-size: 1.125rem;
+}
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  background-color: #50504c;
+  color: black; 
+  box-sizing: content-box;
+  font-size: 1rem;
+}
+
+
+/* Change header text to imported font */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin: 2rem 0 3rem 0;
+  font-weight: 600;
+}
+
+h3 {
+  /* font-family: 'Playfair Display', serif; */
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  display:inline;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 0rem;
+  margin-bottom: 0.75rem;
+  color:#08acda;
+}
+
+p.subtitle{
+  font-size: 0.8rem;
+  color: #0cacda;
+}
+
+span.highlight{
+  color: #0cacda;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-fluid{
+  background-color:#FEFEEE;
+  width: 100%;
+  max-width: 1100px;
+  padding: 2rem 5rem;
+}
+
+.selectize-input.full {
+  background-color: #fefcf0;
+}
+
+@media only screen and (max-width: 500px){
+  .container-fluid{ padding: 1rem;}
+}
+
+/* Make text visible on inputs */
+.shiny-input-container {
+  color: #474747;
+}
+
+.selectize-input {height: 1.5rem; text-align: left;}
+
+.selectize-input > .item{
+  padding-right: 2rem;
+}
+
+.selectize-dropdown-content{text-align: left;}
+
+label.control-label, .selectize-control.single{
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+  padding-right: 1rem;
+  font-size: 1.25rem; 
+  line-height: 1.5; 
+  color:black;
+  font-weight: 700;
+  margin:0;
+}
+
+
+
+.shiny-input-container:not(.shiny-input-container-inline){
+  width: auto;
+}
+
+
+.form-group {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.col-sm-6{
+  margin-bottom: 2rem;
+}
+
+.row--no-bmargin{
+  margin-bottom: 0rem;
+}
+
+.row--bmargin{
+  margin-bottom: 2rem;
+}
+
+
+.labelHeader{
+  display: flex;
+  align-items: center;
+}
+
+
+p.inlineHeader{
+  display: inline;
+  font-size: 1.125rem; line-height: 1.125rem; 
+}
+.selectize-input { font-size: 1.125rem; line-height: 1.125rem;}
+.selectize-dropdown { font-size: 1.125rem; line-height: 1.125rem; }
+.selectize-control {margin: 0}
+
+.mt{
+  margin-top: 0.5rem;
+}
+
+.info{
+  margin-top:0rem;
+  margin-bottom: 0rem;
+  color: #517787;
+}
+
+.info--main{
+  margin-top:0.5rem;
+}
+
+.info--sub{
+  margin-bottom:0.5rem;
+}
